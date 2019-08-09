@@ -1,0 +1,22 @@
+{
+  "name": "@nitescuc/brushless-rpm",
+  "version": "0.0.1",
+  "description": "Brushless motor RPM reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitescuc/brushless-rpm.git"
+  },
+  "author": "Cristian Nitescu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitescuc/brushless-rpm/issues"
+  },
+  "homepage": "https://github.com/nitescuc/brushless-rpm#readme",
+  "dependencies": {
+    "pigpio": "^1.2.2"
+  }
+}
