@@ -3,6 +3,8 @@ const KalmanFilter = require('kalmanjs');
 
 class RpmReader {
     constructor(config) {
+        this.value = 0;
+        
         this.config = config || {};
         this.config.minValue = this.config.minValue || 0;
         this.config.maxValue = this.config.maxValue || 10000;
