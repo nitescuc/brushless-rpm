@@ -54,7 +54,7 @@ class RpmReader {
     
         let remaped = ((value - X_range) / XY_ratio + Math.min(...remap));
 
-        if (this.kalmanFilter) remaped = this.kalmanFilter(remaped);
+        if (this.kalmanFilter) remaped = this.kalmanFilter.filter(remaped);
 
         return remaped;
     }
