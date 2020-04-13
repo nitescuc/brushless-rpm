@@ -11,7 +11,7 @@ class RpmReader {
         this.config.remapValues = this.config.remapValues || [0, 10000];
 
         if (this.config.useKalman) {
-            this.kalmanFilter = new KalmanFilter();
+            this.kalmanFilter = new KalmanFilter({ R: 0.1, Q: 20 });
         }
 
         this.inputPin = new Gpio(this.config.pin, {mode: Gpio.INPUT, alert: true});
